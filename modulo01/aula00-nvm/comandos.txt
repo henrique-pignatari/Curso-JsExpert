@@ -1,0 +1,10 @@
+nvm install X => Para instalar a versão *x* do node
+nvm isntall --lts => Instala a versão long-term support
+
+nvm list => para listar as versões
+
+nvm user X => Usa a versão que já está instalada na maquina
+
+nvm alias default X => Define qua versão padrão para o COMPUTADOR
+
+arquivo .nvmrc => Define a versão node padrão para o projeto, ao rodar nvm use, ele troca e passa a usar a versão definida no projeto
