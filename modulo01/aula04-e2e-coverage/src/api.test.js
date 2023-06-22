@@ -7,7 +7,7 @@ describe('API Suite test', () => {
   let app;
   before((done)=>{
     app = require('./api');
-    app.once('listening',done)
+    app.once('listening', done)
   })
   
   after((done)=> app.close(done))
