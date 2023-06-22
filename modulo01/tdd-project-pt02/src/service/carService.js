@@ -6,7 +6,6 @@ class CarService{
   }
 
   getRandomPositionFromAray(list){
-    console.log(list);
     const listLength = list.length
     return Math.floor( Math.random() * listLength)
   }

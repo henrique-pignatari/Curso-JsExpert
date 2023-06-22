@@ -1,0 +1,23 @@
+[
+    {
+        "id": "20e0fd0b-ac1a-4473-86fa-2e265b8f01aa",
+        "name": "A8",
+        "releaseYear": 2023,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "309e30da-34b7-401f-9788-c68c40dbed2a",
+        "name": "Civic",
+        "releaseYear": 2023,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "916b3326-5d23-4b8c-9107-47af50590e5a",
+        "name": "Wrangler",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    }
+]
