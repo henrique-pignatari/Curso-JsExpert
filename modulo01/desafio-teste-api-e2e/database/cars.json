@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1f2887b5-7ce3-41aa-a5ce-778501dc0a9b",
+        "name": "Mercielago",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "d765de42-8854-4ef4-ac02-ef7943a5981f",
+        "name": "Wrangler",
+        "releaseYear": 2023,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "55ed9fc8-71a3-4309-811c-b1343294e6ec",
+        "name": "A4",
+        "releaseYear": 2022,
+        "available": true,
+        "gasAvailable": true
+    }
+]
