@@ -13,7 +13,7 @@ const options = {
   columns: [
     { field: "id", name: chalk.cyan("ID") },
     { field: "vehicles", name: chalk.magenta("Vehicles") },
-    { field: "kmTraveled", name: chalk.blue("KmTaveled") },
+    { field: "kmTraveled", name: chalk.blue("Km Traveled") },
     { field: "from", name: chalk.yellow("From") },
     { field: "to", name: chalk.red("TO") },
   ],
