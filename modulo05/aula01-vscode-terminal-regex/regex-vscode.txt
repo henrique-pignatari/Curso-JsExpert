@@ -1,0 +1,40 @@
+regex101.com
+
+=> /^\d{3}.\d{3}.\d{3}-\d{2}$/gm
+
+123.123.123-14
+321.123.345-20
+200.300.500.19
+
+=> [.-] seleciona o . OU -
+
+=> Seleciona primeiro nome e sobrenome - /^([\w\s]+),\s(\w+)$/gm
+
+Pignatari, Henrique
+da Silva, Xuxa
+Gomes, Thiago
+
+=> Troca string  formatada por  json {"firstName": "$2", "lastName": "$1"}
+
+{"firstName": "Henrique", "lastName": "Pignatari"}
+{"firstName": "Xuxa", "lastName": "da Silva"}
+{"firstName": "Thiago", "lastName": "Gomes"}
+
+
+=> Seleciona os links  no formato markdown - /\[(.*?)\]\(([http|https].*?)\)/gm
+
+O  [Henrique Pignatari](https://henrique-pignatari.com.br) é um programador bem do bom slk. segue nois la no [twitter](https://twitter.com)
+
+Ou então, caça nois no [Google](https://google.com) ou
+passe vergonha no [Bing](https://bing.com)
+
+mano maluquisse sabia.
+
+=> Troca os links em markdown para html <a href="$2">$1</a>
+
+O  <a href="https://henrique-pignatari.com.br">Henrique Pignatari</a> é um programador bem do bom slk. segue nois la no <a href="https://twitter.com">twitter</a>
+
+Ou então, caça nois no <a href="https://google.com">Google</a> ou
+passe vergonha no <a href="https://bing.com">Bing</a>
+
+mano maluquisse sabia.
