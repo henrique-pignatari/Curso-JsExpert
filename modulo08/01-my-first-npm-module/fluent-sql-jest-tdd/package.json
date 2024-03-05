@@ -1,6 +1,6 @@
 {
-  "name": "fluent-sql",
-  "version": "1.0.0",
+  "name": "@henrique-pignatari/fluent-sql",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",

@@ -25,6 +25,7 @@ describe('Test Suite for FluentSQL Builder', () => {
         const expected = new FluentSQLBuilder({ database: data })
         expect(result).toStrictEqual(expected)
     })
+
     test('#build should return the empty object instance', () => {
         const result = FluentSQLBuilder.for(data).build()
         const expected = data
@@ -37,6 +38,7 @@ describe('Test Suite for FluentSQL Builder', () => {
 
         expect(result).toStrictEqual(expected)
     })
+
     test('#where given a collection it should filter data', () => {
         const result = FluentSQLBuilder.for(data)
             .where({
@@ -49,6 +51,7 @@ describe('Test Suite for FluentSQL Builder', () => {
 
         expect(result).toStrictEqual(expected)
     })
+
     test('#select given a collection it should return only specifc fields', () => {
         const result = FluentSQLBuilder.for(data)
             .select(['name', 'category'])
@@ -58,6 +61,7 @@ describe('Test Suite for FluentSQL Builder', () => {
 
         expect(result).toStrictEqual(expected)
     })
+
     test('#orderBy given a collection it should order results by field', () => {
         const result = FluentSQLBuilder.for(data)
             .orderBy('name')
@@ -79,6 +83,21 @@ describe('Test Suite for FluentSQL Builder', () => {
                 name: 'mariazinha',
                 category: 'developer'
             },
+        ]
+
+        expect(result).toStrictEqual(expected)
+    })
+
+    test('#countBy given a collection it should group results by field', () => {
+        const result = FluentSQLBuilder.for(data)
+            .countBy('category')
+            .build()
+
+        const expected = [
+            {
+                developer: 2,
+                manager: 1
+            }
         ]
 
         expect(result).toStrictEqual(expected)
